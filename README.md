@@ -32,18 +32,18 @@ npm install require-middleman-partial --save-dev
 ## Command line Usage
 
 ```shell
-./node_modules/bin/require-middleman-partial.js <scan dir> <scan extension> <target dir>
+./node_modules/bin/require-middleman-partial.js <scan dir> <scan extension> <target dir> <target extension>
 ```
 
 An example :
 
 ```shell
-./node_modules/bin/require-middleman-partial.js ./scan/includes .md.js ./target
+./node_modules/bin/require-middleman-partial.js ./scan/includes .md.js ./target .md
 ```
 
 ## Library Usage
 
 ```js
 const requireMiddlemanPartial = require('require-middleman-partial');
-requireMiddlemanPartial.generateFiles('./scan/includes', '.md.js', './target');
+requireMiddlemanPartial.generateFiles('./scan/includes', '.md.js', './target', '.md');
 ```
