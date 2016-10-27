@@ -18,7 +18,7 @@ function generateFiles(scanDirPath, extension, outDirPath) {
                 file.mkdirsSync(slateIncludesRelativeDir);
                 const slateIncludesRelativeTarget = slateIncludesRelativeDir + '/_' + f + '.erb';
                 fs.writeFile(slateIncludesRelativeTarget, require(currentDirFullPath + '/' + f));
-                console.log('written partial ' + f + 'to ' + slateIncludesRelativeTarget);
+                console.log('written partial ' + f + ' to ' + slateIncludesRelativeTarget);
             }
         })
     });
