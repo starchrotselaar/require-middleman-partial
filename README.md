@@ -15,7 +15,7 @@ A dir with following layout :
 will result in 
 
 ```
-./out
+./target
 | -- _index.md.js.erb
 | -- resources
      ` -- _fox.md.js.erb
@@ -32,18 +32,18 @@ npm install require-middleman-partial --save-dev
 ## Command line Usage
 
 ```shell
-./node_modules/bin/require-middleman-partial.js <scan dir> <scan extension> <out dir>
+./node_modules/bin/require-middleman-partial.js <scan dir> <scan extension> <target dir>
 ```
 
 An example :
 
 ```shell
-./node_modules/bin/require-middleman-partial.js ./scan/includes .md.js ./out
+./node_modules/bin/require-middleman-partial.js ./scan/includes .md.js ./target
 ```
 
 ## Library Usage
 
 ```js
 const requireMiddlemanPartial = require('require-middleman-partial');
-requireMiddlemanPartial.generateFiles('./scan/includes', '.md.js', './out');
+requireMiddlemanPartial.generateFiles('./scan/includes', '.md.js', './target');
 ```
